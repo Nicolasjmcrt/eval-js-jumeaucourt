@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <!--image slider-->
+        <div class="slider slider-on">
+
+            <!--Dropdown menu-->
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <img src="./img/menu-btn.png" alt="menu button">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Louer une voiture</a>
+                    <a href="#">Louer un utilitaire</a>
+                    <a href="#">Réserver un chauffeur</a>
+                    <a href="#">Découvrez nos agences</a>
+                    <a href="#">Mon compte</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <!--Infos on slider-->
+            <div class="info">
+                <h1>Bienvenue à bord</h1>
+                <p class="sub-h1">Location de voiture 24h/24 et 7j/7</p>
+            </div>
+
+            <!--Slide images-->
+            <div class="slide active">
+                <img src="./img/car-1.png" alt="car-1">
+            </div>
+            <div class="slide">
+                <img src="./img/car-2.png" alt="car-2">
+            </div>
+            <div class="slide">
+                <img src="./img/car-3.png" alt="car-3">
+            </div>
+            <div class="slide">
+                <img src="./img/car-4.png" alt="car-4">
+            </div>
+            <div class="slide">
+                <img src="./img/car-5.png" alt="car-5">
+            </div>
+            <div class="slide">
+                <img src="./img/car-6.png" alt="car-6">
+            </div>
+
+            <!--Manual navigation-->
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+
+            <!--Loan form-->
+            <form action="POST">
+                <div class="form-container">
+                    <div class="sub-container">
+                        <div class="select-form">
+                            <select name="adress" id="adress">
+                                <option selected>Adresse de départ</option>
+                                <option value="1">Paris</option>
+                                <option value="2">Marseille</option>
+                                <option value="3">Lyon</option>
+                                <option value="4">Lille</option>
+                                <option value="5">Nice</option>
+                            </select>
+                        </div>
+                        <div class="first-date">
+                            <input type="date">
+                        </div>
+                        <div class="second-date">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="btn-form">
+                        Valider ma recherche
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!--RESPONSIVE MENU-->
+
+        <div class="resp-slider">
+            <!--Responsive Dropdown menu-->
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <img src="./img/menu-btn.png" alt="menu button">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Louer une voiture</a>
+                    <a href="#">Louer un utilitaire</a>
+                    <a href="#">Réserver un chauffeur</a>
+                    <a href="#">Découvrez nos agences</a>
+                    <a href="#">Mon compte</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <!--Responsive infos on slider-->
+            <div class="info">
+                <h1>Bienvenue à bord</h1>
+                <p class="sub-h1">Location de voiture 24h/24 et 7j/7</p>
+            </div>
+            <!--Responsive loan form-->
+            <form action="POST">
+                <div class="form-container">
+                    <div class="sub-container">
+                        <div class="select-form">
+                            <select name="adress" id="adress">
+                                <option selected>Adresse de départ</option>
+                                <option value="1">Paris</option>
+                                <option value="2">Marseille</option>
+                                <option value="3">Lyon</option>
+                                <option value="4">Lille</option>
+                                <option value="5">Nice</option>
+                            </select>
+                        </div>
+                        <div class="first-date">
+                            <input type="date">
+                        </div>
+                        <div class="second-date">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="btn-form">
+                        Valider ma recherche
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+    <!--CARS CONTAINER-->
+
+    <div class="cars">
+        <div class="cars-container">
+            <div class="cars-info">
+                <p>8 résultats</p>
+                <select name="cars-selector" id="cars-selector">
+                    <option value="1">Prix croissants</option>
+                    <option value="2">Prix décroissants</option>
+                </select>
+            </div>
+            <div class="cars-cards-container">
+                <div class="cars-card card-1">
+                    <div class="cards-slider">
+                        <div class="slide-cars">
+                            <img src="./img/audi-q8-1.png" alt="audi-q8-1">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-q8-2.png" alt="audi-q8-2">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-q8-3.png" alt="audi-q8-3">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-q8-4.png" alt="audi-q8-4">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-q8-5.png" alt="audi-q8-5">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div>
+                        <span class="dot" onclick="currentSlides(1)"></span>
+                        <span class="dot" onclick="currentSlides(2)"></span>
+                        <span class="dot" onclick="currentSlides(3)"></span>
+                        <span class="dot" onclick="currentSlides(4)"></span>
+                        <span class="dot" onclick="currentSlides(5)"></span>
+                    </div>
+                    <div class="cars-infos">
+                        <h3>Audi Q8</h3>
+                        <p>Diesel portes GPS AutoRadio Forfait 1000 km (0 5/m supplémentaire)</p>
+                        <p>1999 € - Agence de Paris</p>
+                        <button>Réserver et payer</button>
+                    </div>
+                </div>
+                <div class="cars-card card-2">
+                    <div class="cards-slider">
+                        <div class="slide-cars">
+                            <img src="./img/audi-s8-1.png" alt="audi-s8-1">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-s8-2.png" alt="audi-s8-2">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-s8-3.png" alt="audi-s8-3">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-s8-4.png" alt="audi-s8-4">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/audi-s8-5.png" alt="audi-s8-5">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div>
+                        <span class="dot" onclick="currentSlides(1)"></span>
+                        <span class="dot" onclick="currentSlides(2)"></span>
+                        <span class="dot" onclick="currentSlides(3)"></span>
+                        <span class="dot" onclick="currentSlides(4)"></span>
+                        <span class="dot" onclick="currentSlides(5)"></span>
+                    </div>
+                    <div class="cars-infos">
+                        <h3>Audi S8</h3>
+                        <p>Essence portes GPS AutoRadio Forfait 1000 km (0 5/m supplémentaire)</p>
+                        <p>1999 € - Agence de Paris</p>
+                        <button>Réserver et payer</button>
+                    </div>
+                </div>
+                <div class="cars-card card-3">
+                    <div class="cards-slider">
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-EQA-1.png" alt="mercedes-EQA-1">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-EQA-2.png" alt="mercedes-EQA-2">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-EQA-3.png" alt="mercedes-EQA-3">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-EQA-4.png" alt="mercedes-EQA-4">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-EQA-5.png" alt="mercedes-EQA-5">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div>
+                        <span class="dot" onclick="currentSlides(1)"></span>
+                        <span class="dot" onclick="currentSlides(2)"></span>
+                        <span class="dot" onclick="currentSlides(3)"></span>
+                        <span class="dot" onclick="currentSlides(4)"></span>
+                        <span class="dot" onclick="currentSlides(5)"></span>
+                    </div>
+                    <div class="cars-infos">
+                        <h3>Mercedes EQA</h3>
+                        <p>Hybride portes GPS AutoRadio Forfait 1000 km (0 5/m supplémentaire)</p>
+                        <p>1999 € - Agence de Paris</p>
+                        <button>Réserver et payer</button>
+                    </div>
+                </div>
+                <div class="cars-card card-4">
+                    <div class="cards-slider">
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-amg-63-1.png" alt="mercedes-amg-63-1">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-amg-63-2.png" alt="mercedes-amg-63-2">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-amg-63-3.png" alt="mercedes-amg-63-3">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-amg-63-4.png" alt="mercedes-amg-63-4">
+                        </div>
+                        <div class="slide-cars">
+                            <img src="./img/mercedes-amg-63-5.png" alt="mercedes-amg-63-5">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div>
+                        <span class="dot" onclick="currentSlides(1)"></span>
+                        <span class="dot" onclick="currentSlides(2)"></span>
+                        <span class="dot" onclick="currentSlides(3)"></span>
+                        <span class="dot" onclick="currentSlides(4)"></span>
+                        <span class="dot" onclick="currentSlides(5)"></span>
+                    </div>
+                    <div class="cars-infos">
+                        <h3>Mercedes AMG 63 GT</h3>
+                        <p>Essence portes GPS AutoRadio Forfait 1000 km (0 5/m supplémentaire)</p>
+                        <p>1999 € - Agence de Paris</p>
+                        <button>Réserver et payer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
